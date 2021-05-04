@@ -1,0 +1,52 @@
+<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                @font-face{
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    src: url('impact.ttf');
+                }
+
+                #loader{
+                    position:relative;
+                    top:40vh;
+                    left:40vw;
+                }
+
+                #loading{
+                    position:relative;
+                    display: flex;
+                    justify-content: center;
+                    height:60px;
+                    width:200px;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 50px;
+                    animation-name: border-animation;
+                    animation-iteration-count: infinite;
+                    animation-duration: 1s;
+                    animation-timing-function:step-end;
+                    border:5px solid white;
+                }
+
+                @keyframes border-animation{
+
+                    10%{border-left-color:black}
+                    20%{border-top-color: black}
+                    30%{border-right-color: black}
+                    40%{border-bottom-color: black}
+                    50%{border-bottom-color: black}
+                    60%{border-left-color:white}
+                    70%{border-top-color: white}
+                    80%{border-right-color: white}
+                    90%{border-bottom-color: white}
+                    100%{border-bottom-color: white}
+                }
+            </style>
+            <div id="loader">
+                <div id="loading">
+                    LOADING    
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
